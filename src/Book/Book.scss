@@ -1,0 +1,82 @@
+@import './../styles/variables.scss';
+
+.book-container { 
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.book-info-container {
+    min-width: 200px;
+    width: 75%;
+    align-content: center;
+    justify-content: center;
+    position:relative; 
+}
+
+.book-image {
+    display: flex;
+    min-width: 200px;
+    width: 15%;
+    align-items: center;
+}
+
+.book-image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-authors {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.book-publisher {
+    color: black;
+    margin-top: 3px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.book-publisher p {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-top: 5px;
+}
+
+.book-wishlist-button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-button-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: $tablet) {
+    .book-info-container {
+        width: 100%;
+    }
+
+    .book-image {
+        width: 100%;
+    }
+
+    .book-wishlist-button-container {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .image-button-container {
+        width: 100%;
+    }
+}
